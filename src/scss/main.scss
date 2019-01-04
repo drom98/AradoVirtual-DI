@@ -1,8 +1,13 @@
 @import url('~/npm-font-open-sans/open-sans');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .color-overlay {
@@ -17,14 +22,24 @@
   height: 100vh;
   background-image: url(../assets/bg.jpeg);
   background-size: cover;
+
+  .el-aside {
+    z-index: 9;
+    height: 100%;
+    background-color: rgba($color: white, $alpha: 0.8);
+  }
+
+  .el-main {
+    z-index: 3;
+  }
 }
 
-.el-main {
-  z-index: 3;
-}
+/* SideBar */
 
-.el-aside {
-  z-index: 9;
-  height: 100%;
-  background-color: rgba($color: white, $alpha: 0.8);
+.sidaBar {
+  background-color: transparent !important;
+
+  span {
+    font-weight: bolder;
+  }
 }

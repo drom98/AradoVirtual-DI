@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Inicio from './views/Inicio.vue';
+import Inicio from '@/views/Inicio.vue';
+import Conta from '@/views/Conta.vue';
 
 Vue.use(Router);
 
@@ -11,5 +12,11 @@ export default new Router({
       name: 'inicio',
       component: Inicio,
     },
+    {
+      path: '/conta',
+      name: 'conta',
+      component: Conta,
+    },
   ],
+  mode: 'history',
 });
