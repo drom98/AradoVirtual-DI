@@ -1,5 +1,6 @@
 @import url('~/npm-font-open-sans/open-sans');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css');
 
 * {
   padding: 0;
@@ -26,11 +27,9 @@ body {
   background-size: cover;
 
   .el-aside {
-    align-items: center;
-    justify-content: center;
     z-index: 9;
     height: 100%;
-    background-color: rgba($color: white, $alpha: 0.8);
+    background-color: rgba($color: white, $alpha: 0.99);
   }
 
   .el-main {

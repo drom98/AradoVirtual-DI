@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <el-row>
+    <el-row type="flex">
       <el-col :span="12" class="content">
         <img src="../assets/AradoVirtual_Logo_Black.png" alt="logotipo" width="60%">
-        <h1>{{titulo}}</h1>
+        <h1 v-html="titulo"></h1>
         <p>{{subtitulo}}</p>
-        <el-button type="success" class="signup">Criar conta</el-button>
-        <el-button type="success" plain class="signin">Entrar</el-button>
+        <router-link to="/conta">
+          <el-button type="success" class="signup">Criar conta</el-button>
+          <el-button type="success" plain class="signin">Entrar</el-button>
+        </router-link>
       </el-col>
     </el-row>
   </div>
@@ -16,7 +18,7 @@
 export default {
   data() {
     return {
-      titulo: "Tenha o seu pequeno quintal em casa.",
+      titulo: "Tenha o seu pequeno <span style='color:#43A838'>quintal</span> em casa.",
       subtitulo: "Aqui irá encontrar tutoriais, cursos, vídeos de demonstração, kits didáticos, e poderá adquirir diversos produtos."
     }
   },
@@ -39,6 +41,7 @@ p {
 
 .el-button {
   margin-top: 24px;
+  font-weight: bolder;
 }
 
 .signin {
