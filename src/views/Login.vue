@@ -2,15 +2,15 @@
   <div id="app">
     <el-row type="flex" justify="center" align="center">
       <el-col :span="12">
-        <img src="../assets/AradoVirtual_Logo_Black.png" alt="logotipo" width="40%">
+        <img src="../assets/AradoVirtual_Logo_Black.png" alt="logotipo" width="30%">
         <div class="divInput" v-loading="loading">
           <h2>{{title}}</h2>
           <el-input 
           prefix-icon="fas fa-user"
-          placeholder="Endereço de email..." 
-          type="email" 
+          placeholder="Nome de utilizador..." 
+          type="text" 
           size="medium" 
-          v-model="email"
+          v-model="username"
           ></el-input>
           <el-input
           prefix-icon="fas fa-unlock"
@@ -19,7 +19,7 @@
           size="medium" 
           v-model="password">
           </el-input>
-          <el-button type="success" class="signin" @click="userLogin">Entrar</el-button>
+          <el-button type="primary" class="signin" @click="userLogin">Entrar</el-button>
         </div>
       </el-col>
     </el-row>
@@ -32,7 +32,7 @@ export default {
     return {
       loading: false,
       title: 'Iniciar sessão',
-      email: '',
+      username: '',
       password: '',
       inputData: []
     }
@@ -51,29 +51,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.divInput {
-  border-radius: 10px;
-  padding: 32px;
-  background-color: rgba($color: white, $alpha: 0.95);
-
-  h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #43A838;
-  }
-
-  .el-input {
-    margin-bottom: 20px;
-  }
-}
+<style lang="scss" scoped src="@/scss/signup.scss">
 </style>
 

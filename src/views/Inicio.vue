@@ -5,9 +5,11 @@
         <img src="../assets/AradoVirtual_Logo_Black.png" alt="logotipo" width="60%">
         <h1 v-html="titulo"></h1>
         <p>{{subtitulo}}</p>
-        <router-link to="/conta">
-          <el-button type="success" class="signup">Criar conta</el-button>
-          <el-button type="success" plain class="signin">Entrar</el-button>
+        <router-link to="/signup">
+          <el-button type="primary" class="signup">Criar conta</el-button>
+        </router-link>
+        <router-link to="/login">
+          <el-button type="primary" plain class="signin">Entrar</el-button>
         </router-link>
       </el-col>
     </el-row>

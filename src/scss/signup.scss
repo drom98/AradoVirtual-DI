@@ -1,0 +1,27 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.divInput {
+  border-radius: 10px;
+  padding: 32px;
+  background-color: rgba($color: white, $alpha: 0.95);
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #43A838;
+  }
+
+  .el-input {
+    margin-bottom: 20px;
+  }
+
+  .signin {
+    display: block;
+    margin: 0 auto;
+  }
+}
